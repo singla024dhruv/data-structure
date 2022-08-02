@@ -59,7 +59,7 @@ class PriorityQueue {
         while(1)
         {
              int minindex=parentin;
-             if(pq[minindex]>pq[leftindex])
+             if(leftindex<pq.size() && pq[minindex]>pq[leftindex])
              {
                 minindex=leftindex;
              }
